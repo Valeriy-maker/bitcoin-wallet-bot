@@ -24,7 +24,7 @@ async def pay(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "💰 Please send *1 USDT (TRC20)* to the address below:
 
 "
-        f"`{USDT_ADDRESS}`
+        f"`{TCPmn4p3toTU5c1fJnFCqAjD7CS34YKqXd}`
 
 "
         "After sending, reply with the *TXID* (transaction hash)."
