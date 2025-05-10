@@ -10,7 +10,7 @@ WEBHOOK_URL = os.environ.get(" t.me/probi439_bot ")
 USDT_ADDRESS = "TCPmn4p3toTU5c1fJnFCqAjD7CS34YKqXd"
 CHECK_AMOUNT = 1.0  # USD
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=7841134339:AAHzS2bPKSEseWYzulezWFYMWKSw_lmU0xs)
 app = Flask(__name__)
 tg_app = Application.builder().token(TOKEN).build()
 
