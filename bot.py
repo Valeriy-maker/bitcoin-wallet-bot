@@ -21,7 +21,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def pay(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = (
-        "💰 Please send *1 USDT (TRC20)* to the address below:
+        " Please send *1 USDT (TRC20)* to the address below:
 
 "
         f"`{TCPmn4p3toTU5c1fJnFCqAjD7CS34YKqXd}`
@@ -51,7 +51,7 @@ def check_transaction(txid: str):
 
 async def receive_txid(update: Update, context: ContextTypes.DEFAULT_TYPE):
     txid = update.message.text.strip()
-    await update.message.reply_text("⏳ Checking transaction...")
+    await update.message.reply_text(" Checking transaction...")
 
     if check_transaction(txid):
         await update.message.reply_text("✅ Payment confirmed!
@@ -60,7 +60,7 @@ Here is your Bitcoin wallet password:
 *bitpass-XYZ123456*", parse_mode='Markdown')
         return ConversationHandler.END
     else:
-        await update.message.reply_text("❌ Transaction not found or incorrect.
+        await update.message.reply_text(" Transaction not found or incorrect.
 Please make sure you sent 1 USDT (TRC20) to the correct address and try again.")
         return ASK_TXID
 
