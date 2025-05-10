@@ -50,10 +50,7 @@ async def receive_txid(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(" Checking transaction...")
 
     if check_transaction(txid):
-        await update.message.reply_text(" Payment confirmed!
-Here is your Bitcoin wallet password:
-
-*bitpass-XYZ123456*", parse_mode='Markdown')
+        await update.message.reply_text(" Payment confirmed! Here is your Bitcoin wallet password:*bitpass-XYZ123456* ", parse_mode='Markdown')
         return ConversationHandler.END
     else:
         await update.message.reply_text(" Transaction not found or incorrect.
