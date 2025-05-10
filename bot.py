@@ -4,8 +4,8 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 import os
 
 # 🔐 Установи эти переменные в Render Dashboard
-TOKEN = os.environ.get("BOT_TOKEN")
-WEBHOOK_URL = os.environ.get("WEBHOOK_URL")  # без слеша на конце
+TOKEN = os.environ.get("7841134339:AAHzS2bPKSEseWYzulezWFYMWKSw_lmU0xs")
+WEBHOOK_URL = os.environ.get("t.me/probi439_bot")  # без слеша на конце
 
 bot = Bot(token=TOKEN)
 app = Flask(__name__)
