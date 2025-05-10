@@ -21,12 +21,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def pay(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = (
-        " Please send *1 USDT (TRC20)* to the address below:
-
-"
-        f"`{TCPmn4p3toTU5c1fJnFCqAjD7CS34YKqXd}`
-
-"
+        " Please send *1 USDT (TRC20)* to the address below: "
+        "`{TCPmn4p3toTU5c1fJnFCqAjD7CS34YKqXd}`"
         "After sending, reply with the *TXID* (transaction hash)."
     )
     await update.message.reply_markdown(msg)
