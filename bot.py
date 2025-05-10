@@ -68,7 +68,7 @@ def webhook():
 
 @app.route('/')
 def home():
-    return "Bot is running and waiting for payments.")
+    return "Bot is running and waiting for payments."
 
 if __name__ == "__main__":
     from telegram.ext import CommandHandler, MessageHandler, filters
