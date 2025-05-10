@@ -53,8 +53,7 @@ async def receive_txid(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(" Payment confirmed! Here is your Bitcoin wallet password:*bitpass-XYZ123456* ", parse_mode='Markdown')
         return ConversationHandler.END
     else:
-        await update.message.reply_text(" Transaction not found or incorrect.
-Please make sure you sent 1 USDT (TRC20) to the correct address and try again.")
+        await update.message.reply_text(" Transaction not found or incorrect. Please make sure you sent 1 USDT (TRC20) to the correct address and try again.")
         return ASK_TXID
 
 async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
