@@ -4,7 +4,7 @@ from telegram import Update, Bot
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, ConversationHandler
 import os, requests, time
 
-TOKEN = os.environ.get(" 7841134339:AAHzS2bPKSEseWYzulezWFYMWKSw_lmU0xs ")
+TOKEN = os.environ.get("7841134339:AAHzS2bPKSEseWYzulezWFYMWKSw_lmU0xs")
 WEBHOOK_URL = os.environ.get(" t.me/probi439_bot ")
 
 USDT_ADDRESS = "TCPmn4p3toTU5c1fJnFCqAjD7CS34YKqXd"
